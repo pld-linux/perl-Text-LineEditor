@@ -1,6 +1,6 @@
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Text
-%define	pnam	LineEditor
+%define		pdir	Text
+%define		pnam	LineEditor
 Summary:	Text::LineEditor - simple line editor
 Summary(pl):	Text::LineEditor - prosty edytor wierszowy
 Name:		perl-Text-LineEditor
