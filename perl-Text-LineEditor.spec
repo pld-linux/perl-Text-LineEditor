@@ -1,8 +1,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Text
 %define	pnam	LineEditor
-Summary:	Text-LineEditor perl module
-Summary(pl):	Modu³ perla Text-LineEditor
+Summary:	Text::LineEditor perl module
+Summary(pl):	Modu³ perla Text::LineEditor
 Name:		perl-Text-LineEditor
 Version:	0.03
 Release:	8
@@ -15,10 +15,10 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Text-LineEditor - simple line editor.
+Text::LineEditor - simple line editor.
 
 %description -l pl
-Text-LineEditor - prosty edytor liniowy.
+Text::LineEditor - prosty edytor liniowy.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
