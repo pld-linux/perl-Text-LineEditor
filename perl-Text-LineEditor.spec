@@ -1,12 +1,11 @@
+%include	/usr/lib/rpm/macros.perl
 %define	pdir	Text
 %define	pnam	LineEditor
-%include	/usr/lib/rpm/macros.perl
 Summary:	Text-LineEditor perl module
 Summary(pl):	Modu³ perla Text-LineEditor
 Name:		perl-Text-LineEditor
 Version:	0.03
-Release:	7
-
+Release:	8
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -22,7 +21,7 @@ Text-LineEditor - simple line editor.
 Text-LineEditor - prosty edytor liniowy.
 
 %prep
-%setup -q -n Text-LineEditor-%{version}
+%setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
 perl Makefile.PL
