@@ -42,5 +42,5 @@ rm -rf $RPM_BUILD_ROOT
 %doc Changes README
 %{perl_sitelib}/Text/LineEditor.pm
 %{_mandir}/man3/*
-%{_examplesdir}/%{name}-%{version}
-%attr(755) %{_examplesdir}/%{name}-%{version}/*.pl
+%dir %{_examplesdir}/%{name}-%{version}
+%attr(755,root,root) %{_examplesdir}/%{name}-%{version}/*.pl
