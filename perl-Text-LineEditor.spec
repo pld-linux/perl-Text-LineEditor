@@ -1,12 +1,13 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Text
 %define	pnam	LineEditor
-Summary:	Text::LineEditor perl module
-Summary(pl):	Modu³ perla Text::LineEditor
+Summary:	Text::LineEditor - simple line editor
+Summary(pl):	Text::LineEditor - prosty edytor wierszowy
 Name:		perl-Text-LineEditor
 Version:	0.03
-Release:	9
-License:	GPL
+Release:	10
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	55c2e5c5b5bb89d02e1beeaa0c9f9de0
@@ -16,10 +17,12 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Text::LineEditor - simple line editor.
+Text::LineEditor Perl module implements a -very- simple editor like
+Berkeley mail used to use.
 
 %description -l pl
-Text::LineEditor - prosty edytor liniowy.
+Modu³ Perla Text::LineEditor zawiera implementacjê prostego edytora
+wierszowego, podobnego do u¿ywanego przez program Berkeley mail.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
@@ -33,7 +36,8 @@ Text::LineEditor - prosty edytor liniowy.
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 install example.pl $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
 %clean
