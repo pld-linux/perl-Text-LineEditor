@@ -2,7 +2,7 @@
 %define		pdir	Text
 %define		pnam	LineEditor
 Summary:	Text::LineEditor - simple line editor
-Summary(pl):	Text::LineEditor - prosty edytor wierszowy
+Summary(pl.UTF-8):   Text::LineEditor - prosty edytor wierszowy
 Name:		perl-Text-LineEditor
 Version:	0.03
 Release:	11
@@ -20,9 +20,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Text::LineEditor Perl module implements a -very- simple editor like
 Berkeley mail used to use.
 
-%description -l pl
-Modu³ Perla Text::LineEditor zawiera implementacjê prostego edytora
-wierszowego, podobnego do u¿ywanego przez program Berkeley mail.
+%description -l pl.UTF-8
+ModuÅ‚ Perla Text::LineEditor zawiera implementacjÄ™ prostego edytora
+wierszowego, podobnego do uÅ¼ywanego przez program Berkeley mail.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
