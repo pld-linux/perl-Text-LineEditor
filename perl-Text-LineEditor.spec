@@ -2,7 +2,7 @@
 %define		pdir	Text
 %define		pnam	LineEditor
 Summary:	Text::LineEditor - simple line editor
-Summary(pl.UTF-8):   Text::LineEditor - prosty edytor wierszowy
+Summary(pl.UTF-8):	Text::LineEditor - prosty edytor wierszowy
 Name:		perl-Text-LineEditor
 Version:	0.03
 Release:	11
