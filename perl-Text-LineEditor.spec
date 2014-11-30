@@ -1,6 +1,6 @@
-%include	/usr/lib/rpm/macros.perl
 %define		pdir	Text
 %define		pnam	LineEditor
+%include	/usr/lib/rpm/macros.perl
 Summary:	Text::LineEditor - simple line editor
 Summary(pl.UTF-8):	Text::LineEditor - prosty edytor wierszowy
 Name:		perl-Text-LineEditor
@@ -11,8 +11,9 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	55c2e5c5b5bb89d02e1beeaa0c9f9de0
-BuildRequires:	rpm-perlprov >= 4.1-13
+URL:		http://search.cpan.org/dist/Text-LineEditor/
 BuildRequires:	perl-devel >= 1:5.8.0
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -38,7 +39,7 @@ install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
-install example.pl $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
+cp -p example.pl $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
