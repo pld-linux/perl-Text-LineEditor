@@ -4,7 +4,7 @@ Summary:	Text::LineEditor - simple line editor
 Summary(pl.UTF-8):	Text::LineEditor - prosty edytor wierszowy
 Name:		perl-Text-LineEditor
 Version:	0.03
-Release:	12
+Release:	13
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
